@@ -1,2 +1,2 @@
-# CS3220
-Project repository for CS3220, University of Windsor
+# COMP3220
+Project repository for COMP 3220, University of Windsor

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/opencsv-4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/commons-lang3-3.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/commons-text-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/commons-beanutils-1.9.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/commons-collections-3.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/http-20070405.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/jackson-annotations-2.11.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/jackson-databind-2.11.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/jackson-core-2.11.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/sfm-csv-jre9-8.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/sfm-converter-jre9-8.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/ow2-asm-6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/lightning-csv-jre9-8.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/sfm-util-jre9-8.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/sfm-reflect-jre9-8.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/sfm-tuples-jre9-8.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/sfm-poi-jre9-8.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/sfm-map-jre9-8.2.3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

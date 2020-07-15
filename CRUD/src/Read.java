@@ -9,6 +9,7 @@ public class Read {
     public static void readFile(String filename) throws IOException {
     	
     	System.out.println("Reading " + filename +"...");
+    	String fname = filename;
 		filename = "./" + filename +".csv";
 		File tmpDir = new File(filename);
 		boolean exists = tmpDir.exists();
@@ -27,6 +28,13 @@ public class Read {
 	                csvRow = (String[]) object;
 	                //data.add(csvRow[0] + " " + csvRow[1] + " " + csvRow[2]);
 	                System.out.println(csvRow[0] + " " + csvRow[1] + " " + csvRow[2]);
+	            }
+	            System.out.println("Do you want to view JSON format?\n1. Yes\n2. No");
+	            Scanner sc = new Scanner(System.in);
+	            int i = sc.nextInt();
+	            if(i == 1)
+	            {
+	            	Server.startServer(fname);
 	            }
 	        } catch (Exception e) {
 	            System.out.println("exception :" + e.getMessage());

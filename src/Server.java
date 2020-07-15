@@ -28,6 +28,7 @@ public class Server {
         public void handle(HttpExchange t) throws IOException {
             String response = "404 Not Found";
 			try {
+				System.out.println(fname);
 				response = convertToJSON.convert(fname);
 			} catch (Exception e) {
 				// TODO Auto-generated catch block

@@ -40,6 +40,19 @@ public class CRUD {
 				String filename = sc.nextLine();
 				Read.readFile(filename);
 			}
+			if(option == 3)
+			{
+				System.out.println("Enter filename to update: ");
+				String filename = sc.nextLine();
+				Update.updateFile(filename);
+			}
+			if(option==4)
+			{
+				System.out.println("Enter filename to delete a row: ");
+				String filename = sc.nextLine();
+				Delete.deleteRow(filename);
+				
+			}
 			if(option == 5)
 			{
 				exit();

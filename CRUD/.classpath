@@ -21,5 +21,8 @@
 	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/sfm-tuples-jre9-8.2.3.jar"/>
 	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/sfm-poi-jre9-8.2.3.jar"/>
 	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/sfm-map-jre9-8.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/jython-2.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/jython-standalone-2.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rahma/Downloads/jackson-dataformat-csv-2.11.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

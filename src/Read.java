@@ -19,14 +19,12 @@ public class Read {
 			return;
 		}
 		 String[] csvRow = null;
-		 ArrayList< HashMap < String,String> > data =  new ArrayList<>();
 	        try {
 	            CSVReader csvReader = new CSVReader(new FileReader(filename));
 
 	            List<String[]> csvAllRows = csvReader.readAll();
 	            for (Object object : csvAllRows) {
 	                csvRow = (String[]) object;
-	                //data.add(csvRow[0] + " " + csvRow[1] + " " + csvRow[2]);
 	                System.out.println(csvRow[0] + " " + csvRow[1] + " " + csvRow[2]);
 	            }
 	            System.out.println("Do you want to view JSON format?\n1. Yes\n2. No");

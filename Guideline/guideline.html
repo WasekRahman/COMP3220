@@ -1,0 +1,61 @@
+<DOCTYPE HTML>
+<body>
+<b>FEEL FREE TO EDIT AND WRITE IN MORE IDEAS</b>
+
+As we are not required to provide a whole working project, we will work on a demo and generalize it as much as possible. Our aim is to show the important functions.
+  1.	Upload a file. Supporting formats include – CSV, XML, JSON
+  2.	Edit a file. I.e – Add data, remove data, modify data
+  3.	Delete a file
+Instead of creating a software application, we will make a small web application.
+Tools we will use – 
+  1.	Java for backend
+  2.	HTML, CSS and a little JavaScript for frontend
+  3.	MySQL for data management and security
+Honestly, I myself never used java as a backend technology, so I need a learn a lot of things myself.
+
+The first thing we need to learn is CRUD operations with Java. CRUD is a popular term which stands for Create, Read, Update, and Delete. 
+So, this is how I would move forward with this application – 
+  1.	Learn how to read a file of these formats – CSV, XML, JSON using Java
+  2.	Learn to write on those formats
+  3.	Learn to modify the content on those files
+  4.	Learn to create a server using Java. Look into JAX-RS. (Just Google JAX-RS)
+  5.	Learn to display the contents from those formats on our server/html page
+  6.	Learn to create a login page using HTML and CSS which will be connected to our Java Backend
+  7.	Learn to use MySQL to store usernames and passwords
+  8.	Learn to match the username and password provided by a user on our HTML page with our MySQL database
+After we learn those 8 things, we can easily connect everything together and hopefully come up with a very impressive mini project.
+In short, skipping the whole technical part, this is what our project will do – 
+We will load our html page on the browser, we will have an option – GUEST or ADMINISTRATOR,
+If you are a guest, you will be redirected to the page where you can only download data files. But if you are an admin, you will be directed to the login page, 
+	where you will login and then we will show the options for creating/adding a new data file, editing an existing a data file and even deleting a data file.
+
+How will creating a data file work? Just an idea – things may change as we code.
+- We will simply have an upload button and upload a file. The files we upload will be stored in our MySQL database and from there, it will be displayed to our HTML page. 
+	We may need to look into “How to display contents from a CSV file on HTML page?” IF by any chance that doesn’t work out. 
+	What we will do is, use Java to read the contents from the CSV file and pass it as “string” to our HTML file and display it like that.
+
+How will we modify an existing database?
+- This is a tricky one. So, we will select the file that we want to edit on our HTML page. Say we have a file with this following table - 
+
+ID	NAME	AGE	ADDRESS
+89	Dawgy Dawg	24	Jojo street
+			
+
+Now, to edit the contents of these, using Java we will first read the headers. In this case- ID, NAME, AGE, ADDRESS. We will display on the HTML page the headers 
+and ask the user to fill it up.
+
+Like for example- After the user hits “edit”, the user will be asked -
+What is the ID?
+<i>- User types an ID</i>
+What is the NAME?
+<i>- User types NAME</i>
+What is the AGE?
+<i>-User types AGE</i>
+What is the ADDRESS?
+<i>- User types address</i>
+The information is sent to our Java backend, and I’m pretty sure, it’s easy to append data to files using Java. We appended a lot of stuff in C, if you recall.
+And boom. The file gets updated with the new content. 
+
+I think that’s a lot for now. Let’s skip the delete option cause we may not be able to finish it on time.
+</body>
+</html>

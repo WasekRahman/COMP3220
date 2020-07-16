@@ -2,9 +2,18 @@ import java.io.*;
 import java.util.*; 
 import com.opencsv.CSVWriter; 
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class CRUD.
+ */
 public class CRUD {
+	
+	/** The option. */
 	static int option;
 	
+	/**
+	 * Menu.
+	 */
 	public static void menu()
 	{
 		Scanner sc = new Scanner(System.in);
@@ -18,11 +27,21 @@ public class CRUD {
 		option = sc.nextInt();
 		
 	}
+	
+	/**
+	 * Exit.
+	 */
 	public static void exit()
 	{
 		System.out.println("Exiting program..");
 	}
 	
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	public static void main(String[] args) throws IOException 
 	{ 
 		Scanner sc = new Scanner(System.in);

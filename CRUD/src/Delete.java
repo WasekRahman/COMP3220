@@ -9,7 +9,19 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Delete.
+ */
 public class Delete {
+	
+	/**
+	 * Read header.
+	 *
+	 * @param fname the fname
+	 * @return the int
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	public static int readHeader(String fname) throws IOException
 	{
 		 CSVReader reader = new CSVReader(new FileReader(fname));
@@ -18,18 +30,25 @@ public class Delete {
 	      
 	}
 	
+	/**
+	 * Delete row.
+	 *
+	 * @param fname the fname
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	public static void deleteRow(String fname) throws IOException
 	{
 		System.out.println("Deleting row...");
 	    Scanner sc = new Scanner(System.in);
 		String filename = fname + ".csv";
 		File tmpDir = new File(filename);
-		boolean exists = tmpDir.exists();
+		boolean exists = tmpDir.exists();/*Checks if the given file exists or not*/
 		if(exists == false)
 		{
 			System.out.println("File does not exist.");
 			return;
 		}
+		
 		while(true)
 		{
 		CSVReader reader2 = new CSVReader(new FileReader(filename));

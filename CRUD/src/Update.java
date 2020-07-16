@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
@@ -10,7 +13,18 @@ import java.nio.file.Paths;
 
 import au.com.bytecode.opencsv.CSVWriter;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Update.
+ */
 public class Update {
+	
+	/**
+	 * Adds the row.
+	 *
+	 * @param fname the fname
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	public static void addRow(String fname) throws IOException {
 		Scanner sc = new Scanner(System.in);
 		 String fileName = fname + ".csv";
@@ -31,14 +45,20 @@ public class Update {
 
 	}
 
-	 public static void updateFile(String filename) throws IOException {
+	 /**
+ 	 * Update file.
+ 	 *
+ 	 * @param filename the filename
+ 	 * @throws IOException Signals that an I/O exception has occurred.
+ 	 */
+ 	public static void updateFile(String filename) throws IOException {
 		 System.out.println("Updating " + filename +"...");
 		 Scanner sc = new Scanner(System.in);
 	    	String fname = filename;
 	    	int option;
 			filename = "./" + filename +".csv";
 			File tmpDir = new File(filename);
-			boolean exists = tmpDir.exists();
+			boolean exists = tmpDir.exists();/*Checks if the given file exists or not*/
 			if(exists == false)
 			{
 				System.out.println("File does not exist.");

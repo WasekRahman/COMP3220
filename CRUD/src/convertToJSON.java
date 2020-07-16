@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.dataformat.csv.*;
 public class convertToJSON {
    public static String convert(String fname) throws Exception {
-      File input = new File("result.csv");
+      File input = new File(fname +".csv");
       try {
          CsvSchema csv = CsvSchema.emptySchema().withHeader();
          CsvMapper csvMapper = new CsvMapper();

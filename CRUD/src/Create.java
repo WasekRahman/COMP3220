@@ -5,15 +5,24 @@ import java.util.*;
 
 import com.opencsv.CSVWriter;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Create.
+ */
 public class Create {
 
+	/**
+	 * Creates the file.
+	 *
+	 * @param filePath the file path
+	 */
 	public static void createFile(String filePath) 
 	{ 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Creating " + filePath +"...");
 		filePath = "./" + filePath +".csv";
 		File tmpDir = new File(filePath);
-		boolean exists = tmpDir.exists();
+		boolean exists = tmpDir.exists();/*Checks if the given file exists or not*/
 		if(exists == true)
 		{
 			System.out.println("File exists already. Do you want to overwrite it?\n1. Yes\n2. No");

@@ -4,15 +4,25 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Read.
+ */
 public class Read {
 
+    /**
+     * Read file.
+     *
+     * @param filename the filename
+     * @throws IOException Signals that an I/O exception has occurred.
+     */
     public static void readFile(String filename) throws IOException {
     	
     	System.out.println("Reading " + filename +"...");
     	String fname = filename;
 		filename = "./" + filename +".csv";
 		File tmpDir = new File(filename);
-		boolean exists = tmpDir.exists();
+		boolean exists = tmpDir.exists();/*Checks if the given file exists or not*/
 		if(exists == false)
 		{
 			System.out.println("File does not exist.");

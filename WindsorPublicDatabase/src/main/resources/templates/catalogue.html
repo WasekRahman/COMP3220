@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+
+    <meta charset="utf-8">
+    <title>Datasets</title>
+
+</head>
+
+<body>
+<div layout:fragment="content">
+    <section style="padding: 2%">
+        <tr th:each="data, iterstat: ${datasets}">
+            <form action="data">
+
+                <div>
+                    <input type="hidden" name="filename" th:value="${data}">
+                </div>
+                <div class="w3-container w3-center" style="background-position: center; width: 400px; border: 1px solid black; padding: 20px; margin: 20px;">
+                <button type="submit" class="btn btn-dark btn-lg"><td th:text="${data}" th:id="|td${iterstat.index}|"></td>
+                </button>
+                </div>
+
+            </form>
+
+        </tr>
+        <div class="container-fluid">
+            <div id='table-container'> </div>
+
+        </div><!-- /.container -->
+    </section>
+</div>
+
+
+
+</body>
+</html>
